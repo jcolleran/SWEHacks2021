@@ -1,1 +1,92 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lil' Chef</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <h1 id="game-name">Lil' Chef</h1>
+    <section id="welcome-page">
+        <h3 id="welcome">Welcome to the kitchen! It's time to make fun foods!</h3>
+        <div id="column-layout">
+            <div id="filler-area">
+                <img id="filler-photo"
+                    src="https://thumbs.dreamstime.com/b/baking-ingredients-kitchen-tools-utensils-set-realistic-cartoon-vector-illustrations-cooking-related-objects-87288744.jpg">
+            </div>
+
+            <div id="tutorial">
+                <h4>Tutorial:</h4>
+                <ol>
+                    <li>Open your pantry.</li>
+                    <li>Select two ingredients you want to combine.</li>
+                    <li>Become a lil' chef!</li>
+                </ol>
+
+                <span id="break"></span>
+                <h4>Background color:</h4>
+                <select id=background-select>
+                    <option value="white">White (suggested)</option>
+                    <option value="#ffebfc">Pink</option>
+                    <option value="#ffe5d4">Orange</option>
+                    <option value="#ffffd4">Yellow</option>
+                    <option value="#d9ffd4">Green</option>
+                    <option value="#d4eaff">Blue</option>
+                    <option value="#ead4ff">Purple</option>
+                    <option value="#f2f2f2">Grey</option>
+                    <option value="black">Black (don't, it's ugly)</option>
+                </select>
+            </div>
+
+            <div id="tutorial-photo-container">
+                <img id="tutorial-photo" src="game-image.png">
+            </div>
+        </div>
+        <button id="start-button" class="transition-button">Start</button>
+    </section>
+
+
+
+    <section id="game-page" class="hidden">
+        <div id="flex-container">
+
+            <div id="pantry">
+                <p>Ingredients</p>
+                <div class="pantry-ingredients">
+                    <img alt="water"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0RyzhOSpD6uFHZ1HZsilzlWIiahcvtccwcThMmlKDuCRyEzh&s">
+                    <img alt="salt"
+                        src="https://library.kissclipart.com/20180926/qpq/kissclipart-salt-75-clipart-salt-stuffing-clip-art-77f1edc01264e6c4.jpg">
+                    <img alt="sugar"
+                        src="http://images.clipartpanda.com/sugar-clipart-sugar-clipart-29539686-vector-black-sugar-bag-icon-on-white-stock-vector.jpg">
+                    <img alt="wheat"
+                        src="https://cdn.imgbin.com/14/22/7/imgbin-wheat-PepsMCvjLgMyVtUXcqHbjzAqZ.jpg">
+                    <img alt="seed"
+                        src="https://library.kissclipart.com/20180904/gaq/kissclipart-seeds-clipart-seed-germination-clip-art-e2b873be878ca272.jpg">
+                </div>
+            </div>
+
+            <div id="workspace">
+                <p>Workspace</p>
+                <div id="workspace-ingredients">
+                    <img id="workspace-ingredient1" />
+                    <img id="workspace-ingredient2" />
+                </div>
+
+                <img id="table-img"
+                    src="https://vignette2.wikia.nocookie.net/clubpenguin/images/f/f5/Coffee_Table_(ID_584).png/revision/latest/scale-to-width-down/2000?cb=20140124224950">
+                <button id="combine-button">Combine</button>
+            </div>
+
+            <div id="product">
+                <p>Your dish</p>
+                <div id="dish">
+                </div>
+            </div>
+        </div>
+        <button id="home-button" class="transition-button">Home</button>
+    </section>
+</body>
+</html>
