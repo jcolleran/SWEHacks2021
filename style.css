@@ -1,1 +1,198 @@
+* {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 4px;
+}
 
+#game-name {
+    font-family: sans-serif;
+    color: teal;
+    font-size: 36px;
+}
+
+
+/* WELCOME PAGE */
+#welcome {
+    font-size: 25px;
+}
+
+#column-layout {
+    display: flex;
+    font-size: 18px;
+}
+
+#column-layout>div {
+    background-color: #e6f6ff;
+    border: 4px solid #cfecfc;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+#filler-photo {
+    padding-top: 25%;
+}
+
+#tutorial {
+    height: auto;
+    width: 50%;
+    font-size: 22px;
+}
+
+li {
+    margin-left: 30px;
+    text-align: left;
+}
+
+#break {
+    line-height: 100px;
+}
+
+#background-select {
+    padding: 5%;
+    border-radius: 10%;
+    border: 3px solid #cfecfc;
+    font-size: 18px;
+}
+
+body * img {
+    width: 90%;
+    height: auto;
+}
+
+.transition-button {
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    border: 4px solid teal;
+    width: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 40%;
+    transition-duration: 0.4s;
+}
+
+.transition-button:hover {
+    background-color: teal;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* GAME PAGE */
+#flex-container {
+    display: flex;
+    font-size: 28px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#flex-container>div {
+    width: 29%;
+    height: auto;
+    border-radius: 5%;
+    padding: 1.5%;
+    height: 500px;
+}
+
+
+/* PANTRY */
+#pantry {
+    border: 4px solid #ffe8a8   ;
+    width: auto;
+    justify-content: space-between;
+    background-color: #fffaeb;
+    border-radius: 5%;
+}
+
+.pantry-ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.pantry-ingredients>img {
+    max-width: 15%;
+    height: auto;
+}
+
+
+
+/* WORKSPACE */
+#workspace {
+    background-color: #e4ffd9;  
+    border: 4px solid #c6ffb0;
+}
+
+#table-img {
+    position: absolute;
+    bottom: 50%;
+    align-self: center;
+    left: 37.5%;
+    height: auto;
+    width: 25%;
+    z-index: 0;
+}
+
+#workspace-ingredients {
+    position: absolute;
+    top: 30%;
+    left: 37.5%;
+    width: 25%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+}
+
+#workspace-ingredients>img {
+    max-width: 15%;
+    height: auto;
+}
+
+#combine-button {
+    font-size: 30px;
+    padding: 5%;
+    margin-top: 375px;
+    margin-bottom: 10%;
+    background-color: white;
+    border: 1px solid #c6ffb0;
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px #81ff4f;
+    transition-duration: 0.4s;
+}
+
+#combine-button:hover {
+    box-shadow: 0 12px 6px -6px #81ff4f;
+}
+
+
+/* PRODUCT */
+#product {
+    background-color: #e6f6ff;
+    border: 4px solid #cfecfc;
+}
+
+#dish {
+    margin-top: 20%;
+    width: 100%;
+}
+
+#dish>img {
+    width: 50%;
+    height: auto;
+}
+
+
+
+/* MISC */
+.hidden {
+    display: none;
+}
